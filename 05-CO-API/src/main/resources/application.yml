@@ -1,0 +1,37 @@
+server:
+  port: 9095
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    password: test
+    url: jdbc:mysql://localhost:3306/admin_api
+    username: root
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+  mvc:
+    pathmatch:
+      matching-strategy: ant-path-matcher
+
+#  mail:
+#    host: smtp.gmail.com
+#    password: bbwutxdwpbajubqj
+#    port: 587
+#    properties:
+#      mail:
+#        smtp:
+#          auth: true
+#          starttls:
+#            enable: true
+#    username: sunilkumarmandal710@gmail.com
+
+cloud:
+  aws:
+    credentials:
+      access-key: AKIA5FTZBQNOIX3BYRZV
+      secret-key: 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
+    region:
+      static: us-east-1
+    s3:
+      bucket: mynoticesunil
